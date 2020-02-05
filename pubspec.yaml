@@ -114,6 +114,12 @@ flutter:
     - assets/images/calen.png
     - assets/images/reim.png
     - assets/images/mypay.png
+    - assets/images/calendar.png
+    - assets/images/checklist.png
+    - assets/images/conference.png
+    - assets/images/details.png
+    - assets/images/rewards.jpg
+    - assets/images/totalprojects.png
 
 
   # To add assets to your application, add an assets section, like this:

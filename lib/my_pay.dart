@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_altaoss/reim.dart';
-import 'package:flutter_altaoss/reimbursement_activity.dart';
 
 class MyPay extends StatefulWidget{
   MyPay({Key key, this.fullname, this.empid})

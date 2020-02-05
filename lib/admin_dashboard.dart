@@ -9,11 +9,14 @@ import 'package:flutter_altaoss/careers.dart';
 import 'package:flutter_altaoss/emp_directory_list.dart';
 import 'package:flutter_altaoss/employee_attendance.dart';
 import 'package:flutter_altaoss/employee_list.dart';
+import 'package:flutter_altaoss/interviews.dart';
 import 'package:flutter_altaoss/login_register.dart';
 import 'package:flutter_altaoss/my_pay.dart';
 import 'package:flutter_altaoss/my_profile.dart';
 import 'package:flutter_altaoss/new_project.dart';
 import 'package:flutter_altaoss/our_updates.dart';
+import 'package:flutter_altaoss/project_details.dart';
+import 'package:flutter_altaoss/rewards.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:progress_dialog/progress_dialog.dart';
 
@@ -472,11 +475,8 @@ class _MainMenu1State extends State<MainMenu1> {
                           MaterialPageRoute(builder: (context) => MyPay(empid: empid, fullname: name,)
                           ),
                         );
-
                       },
                         color: Colors.white,
-
-
                         //padding: EdgeInsets.all(10.0),
                         child: Column(
                           children: <Widget>[
@@ -486,7 +486,60 @@ class _MainMenu1State extends State<MainMenu1> {
                         ),
                       ),
 
+                      new FlatButton(onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) =>
+                              ProjectDetails(empid: empid, fullname: name,)
+                          ),
+                        );
+                      },
+                        color: Colors.white,
+                        //padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          children: <Widget>[
+                            Expanded(
+                              child: Image.asset('assets/images/details.png'),),
+                            new Text("Project Details"),
+                          ],
+                        ),
+                      ),
 
+                      new FlatButton(onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Rewards()
+                          ),
+                        );
+                      },
+                        color: Colors.white,
+                        //padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          children: <Widget>[
+                            Expanded(
+                              child: Image.asset('assets/images/rewards.jpg'),),
+                            new Text("Rewards"),
+                          ],
+                        ),
+                      ),
+
+                      new FlatButton(onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Interviews()
+                          ),
+                        );
+                      },
+                        color: Colors.white,
+                        //padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          children: <Widget>[
+                            Expanded(
+                              child: Image.asset('assets/images/rewards.jpg'),),
+                            new Text("Interviews"),
+                          ],
+                        ),
+                      ),
 
                     ],
                   ),
